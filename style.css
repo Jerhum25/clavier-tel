@@ -88,6 +88,7 @@ table {
     font-size: 40px;
     margin: 50px auto 0 auto;
     border: 1px solid green;
+    overflow: hidden;
 }
 #ajoutNumero{
     width: fit-content;
@@ -128,6 +129,8 @@ table {
 }
 .clavier .touche input{
     border: none;
+    width: fit-content;
+    height: fit-content;
 }
 .clavier .touche input:hover{
     background: none;
