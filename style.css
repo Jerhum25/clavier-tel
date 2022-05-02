@@ -1,0 +1,164 @@
+/*GLOBAL RESET*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* Début du code */
+.contenu{
+    width: 375px;
+    height: 812px;
+    border-radius: 20px;
+    border: 2px solid #333;
+    font-family: calibri;
+    /* margin-left: 50%;
+    margin-top: 50%;
+    transform: translate(-50%, -50%); */
+}
+.contenu header{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.contenu header .center{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.contenu header .center .hp{
+    width: 30px;
+    height: 5px;
+    border-radius: 5px;
+    background: #000;
+}
+.contenu header .center .ap{
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: #000;  
+}
+.contenu header .droite i{
+    margin: 0 5px;
+}
+#numero{
+    width: 90%;
+    height: 60px;
+    text-align: center;
+    font-size: 40px;
+    margin: 50px auto 0 auto;
+    border: 1px solid green;
+}
+#ajoutNumero{
+    width: fit-content;
+    margin: 0 auto 30px auto;
+    padding: 5px 0;
+    color: rgb(69, 69, 164);
+    font-size: 20px;
+    cursor: pointer;
+    text-align: center;
+    vertical-align: center;
+    border: 1px solid yellow;
+}
+.clavier{
+    width: 90%;
+    height: 550px;
+    margin: auto;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-wrap: wrap;
+}
+.clavier .touche{
+    cursor: pointer;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    /* border: 1px solid #ccc; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+    background: #eee;
+}
+.clavier .touche:active,
+.clavier .touche:active input{
+    background: #555;
+    color: #eee;
+}
+.clavier .touche input{
+    border: none;
+}
+.clavier .touche input:hover{
+    background: none;
+    cursor: pointer;
+}
+.clavier .touche .chiffre{
+    font-size: 32px;
+    font-weight: 600;
+}
+.clavier .touche13{
+    background: rgb(39, 219, 39);
+    font-size: 30px;
+    color: #fff;
+}
+.clavier .touche .lettres{
+    height: 16px;
+}
+.clavier .touche13{
+    margin-left: 125px;
+}
+.clavier .touche13:active{
+    filter: brightness(85%);  
+}
+.clavier .touche14{
+    background: none;
+    font-size: 25px;
+    cursor: initial;
+}
+.clavier .touche14:active{
+    background: none;
+}
+.clavier .touche14 i:hover{
+    cursor: pointer;
+}

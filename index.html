@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/279d0d4073.js" crossorigin="anonymous"></script>
+    <title>clavier telephone</title>
+</head>
+
+<body>
+    <div class="contenu">
+        <header>
+            <div class="heure"></div>
+            <div class="center">
+                <div class="hp"></div>
+                <div class="ap"></div>
+            </div>
+            <div class="droite">
+                <i class="fa-solid fa-signal"></i>
+                <i class="fa-solid fa-wifi"></i>
+                <i class="fa-solid fa-battery-three-quarters"></i>
+            </div>
+        </header>
+
+        <div type="tel" id="numero" pattern="[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}-[0-9]{2}"></div>
+
+        <section id="ajoutNumero"></section>
+
+        <section class="clavier">
+            <div class="touche touche1">
+                <input type="button" onclick="showValue(this)" class="chiffre" value = "1">
+                <div class="lettres"></div>
+            </div>
+            <div class="touche touche2">
+                <input type="button" onclick="showValue(this)" class="chiffre" value = "2">
+                <div class="lettres">ABC</div>
+            </div>
+            <div class="touche touche3">
+                <input type="button" onclick="showValue(this)" class="chiffre" value = "3">
+                <div class="lettres">DEF</div>
+            </div>
+            <div class="touche touche4">
+                <input type="button" onclick="showValue(this)" class="chiffre" value = "4">
+                <div class="lettres">GHI</div>
+            </div>
+            <div class="touche touche5">
+                <input type="button" onclick="showValue(this)" class="chiffre" value = "5">
+                <div class="lettres">JKL</div>
+            </div>
+            <div class="touche touche6">
+                <input type="button" onclick="showValue(this)" class="chiffre" value = "6">
+                <div class="lettres">MNO</div>
+            </div>
+            <div class="touche touche7">
+                <input type="button" onclick="showValue(this)" class="chiffre" value = "7">
+                <div class="lettres">PQRS</div>
+            </div>
+            <div class="touche touche8">
+                <input type="button" onclick="showValue(this)" class="chiffre" value = "8">
+                <div class="lettres">TUV</div>
+            </div>
+            <div class="touche touche9">
+                <input type="button" onclick="showValue(this)" class="chiffre" value = "9">
+                <div class="lettres">WXYZ</div>
+            </div>
+            <div class="touche touche10">
+                <input type="button" onclick="showValue(this)" class="chiffre" value = "*">
+            </div>
+            <div class="touche touche11">
+                <input type="button" onclick="showValue(this)" class="chiffre" value = "0">
+                <div class="lettres">+</div>
+            </div>
+            <div class="touche touche12">
+                <input type="button" onclick="showValue(this)" class="chiffre" value = "#">
+            </div>
+            <div class="touche touche13">
+                <i class="fa-solid fa-phone"></i>
+            </div>
+            <div class="touche touche14">
+                <i class="fa-solid fa-delete-left" onclick="remove(this)"></i>
+            </div>
+        </section>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
